@@ -1,6 +1,6 @@
 # TCP Echo Server
 
-Exercise from chapter 2 **"TCP: Exploring the Basics"** from ["Network Programming in Elixir and Erlang"](https://pragprog.com/titles/alnpee/network-programming-in-elixir-and-erlang/) book
+Exercise from Chapter 2 - **TCP: Exploring the Basics** of [Network Programming in Elixir and Erlang](https://pragprog.com/titles/alnpee/network-programming-in-elixir-and-erlang/) book
 
 ## How to run?
 
@@ -16,3 +16,7 @@ Exercise from chapter 2 **"TCP: Exploring the Basics"** from ["Network Programmi
 
 20:42:40.090 [debug] ### Data received: 'This is a TCP server in action'
 ```
+
+## References
+- [Task and :gen_tcp docs](https://hexdocs.pm/elixir/task-and-gen-tcp.html)
+- [Netcat (nc) Command in Linux with Examples](https://linuxize.com/post/netcat-nc-command-with-examples/)
