@@ -1,22 +1,18 @@
-# TcpEchoServer
+# TCP Echo Server
 
-**TODO: Add description**
+Exercise from chapter 2 **"TCP: Exploring the Basics"** from ["Network Programming in Elixir and Erlang"](https://pragprog.com/titles/alnpee/network-programming-in-elixir-and-erlang/) book
 
-## Installation
+## How to run?
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `tcp_echo_server` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:tcp_echo_server, "~> 0.1.0"}
-  ]
-end
+1. Start the server: `mix run --no-halt`
+2. Send a message in another terminal: `echo "Hello world\nThis is a TCP server in action!" | nc localhost 4000`
+3. Check the logs in server output
 ```
+➜  tcp_echo_server git:(main) ✗ mix run --no-halt
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/tcp_echo_server>.
+20:42:32.788 [info] Started TCP server on port 4000
 
-# tcp_echo_server
+20:42:40.090 [debug] ### Data received: 'Hello world'
+
+20:42:40.090 [debug] ### Data received: 'This is a TCP server in action'
+```
